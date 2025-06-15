@@ -1,0 +1,33 @@
+server:
+  port: 8083
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDR:127.0.0.1:8848}
+      config:
+        server-addr: ${NACOS_ADDR:127.0.0.1:8848}
+        import-check-enabled: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/insurance_distribution?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 200313
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: product-service
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.wyl.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+#mybatis-plus:
+#  mapper-locations: classpath*:mapper/*.xml

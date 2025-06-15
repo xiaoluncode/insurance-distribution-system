@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="agent" />
+        <module name="product" />
+        <module name="common" />
+        <module name="auth" />
+        <module name="commission" />
+        <module name="config" />
+        <module name="gateway" />
+        <module name="order" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17">
+      <module name="insurance-config" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="agent" options="-parameters" />
+      <module name="auth" options="-parameters" />
+      <module name="commission" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="product" options="-parameters" />
+    </option>
+  </component>
+</project>

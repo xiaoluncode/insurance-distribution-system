@@ -1,0 +1,9 @@
+D:\workspace\insurance-distribution-system\Auth\src\main\java\com\wyl\entity\User.java
+D:\workspace\insurance-distribution-system\Auth\src\main\java\com\wyl\dto\LoginDTO.java
+D:\workspace\insurance-distribution-system\Auth\src\main\java\com\wyl\controller\AuthController.java
+D:\workspace\insurance-distribution-system\Auth\src\main\java\com\wyl\service\impl\UserServiceImpl.java
+D:\workspace\insurance-distribution-system\Auth\src\main\java\com\wyl\controller\UserController.java
+D:\workspace\insurance-distribution-system\Auth\src\main\java\com\wyl\service\UserService.java
+D:\workspace\insurance-distribution-system\Auth\src\main\java\com\wyl\AuthServiceApplication.java
+D:\workspace\insurance-distribution-system\Auth\src\main\java\com\wyl\mapper\UserMapper.java
+D:\workspace\insurance-distribution-system\Auth\src\main\java\com\wyl\dto\RegisterDTO.java
