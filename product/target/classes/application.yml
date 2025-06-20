@@ -28,6 +28,48 @@ mybatis-plus:
       logic-delete-field: deleted
       logic-delete-value: 1
       logic-not-delete-value: 0
+# Seata 配置（如需分布式事务）
+seata:
+  service:
+    vgroup-mapping:
+      commission-service-group: default
+  enabled: true
+  application-id: ${spring.application.name}
+  tx-service-group: commission-service-group
+  registry:
+    type: nacos
+    nacos:
+      server-addr: ${spring.cloud.nacos.discovery.server-addr}
+      namespace: public
+      group: SEATA_GROUP
+  config:
+    type: nacos
+    nacos:
+      server-addr: ${spring.cloud.nacos.discovery.server-addr}
+      namespace: public
+      group: SEATA_GROUP
+  data-source-proxy-mode: AT
+# Seata 配置（如需分布式事务）
+seata:
+  service:
+    vgroup-mapping:
+      commission-service-group: default
+  enabled: true
+  application-id: ${spring.application.name}
+  tx-service-group: commission-service-group
+  registry:
+    type: nacos
+    nacos:
+      server-addr: ${spring.cloud.nacos.discovery.server-addr}
+      namespace: public
+      group: SEATA_GROUP
+  config:
+    type: nacos
+    nacos:
+      server-addr: ${spring.cloud.nacos.discovery.server-addr}
+      namespace: public
+      group: SEATA_GROUP
+  data-source-proxy-mode: AT
 
 #mybatis-plus:
 #  mapper-locations: classpath*:mapper/*.xml
