@@ -31,9 +31,13 @@
 - **API 接口**:
 | 方法 | 路径 | 描述 |
 | :--- | :--- | :--- |
+
 | `POST` | `/agent/register` | 注册新代理人 |
+
 | `GET` | `/agent/team` | 查询某代理人的团队成员 |
+
 | `GET` | `/agent/getLevelById/{agentId}` | 获取代理人等级 |
+
 | `GET` | `/agent/getMonthlyPerformance` | 查询团队月度业绩 |
 
 
@@ -50,8 +54,11 @@
 - **API 接口**:
 | 方法 | 路径 | 描述 |
 | :--- | :--- | :--- |
+
 | `POST` | `/order/add` | 创建新订单 |
+
 | `GET` | `/order` | 分页查询订单 |
+
 | `PUT` | `/order/updatestatus/{orderNo}` | 驱动订单状态流转 |
 
 ### 2.3 佣金模块 (`commission-service`)
@@ -71,9 +78,13 @@
 - **API 接口**:
 | 方法 | 路径 | 描述 |
 | :--- | :--- | :--- |
+
 | `POST` | `/commission/calculate` | （核心）根据订单计算佣金 |
+
 | `GET` | `/summary/daily/selectByMonth`| 查询某月每日汇总 |
+
 | `GET` | `/summary/monthly/selectByYear`| 查询某年每月汇总 |
+
 | `GET` | `/summary/yearly/select` | 查询年度汇总 |
 
 
